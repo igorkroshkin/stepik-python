@@ -1,3 +1,9 @@
-num1 = float(input())
+num = int(input())
 
-print("hello, world")
+f1 = 0
+f2 = 1
+
+print(f2, end = " ")
+for _ in range(num-1):
+    f1, f2 = f2, f1+ f2
+    print(f2, end = " ")
